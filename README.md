@@ -1,4 +1,4 @@
-# my_package
+# gowtham_hello
 
 ## Overview
 my_package is a simple Python package that provides motivational quotes. It includes a single function `get_quote()` that returns a random inspirational message.
