@@ -5,6 +5,5 @@ setup(
     version='0.3',
     pacakages=find_packages(),
     install_requries=[
-        'numpy>=2.0'
     ],
 )
