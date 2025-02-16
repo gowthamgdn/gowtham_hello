@@ -1,66 +1,66 @@
-# gowtham_hello
+# my_package
 
 ## Overview
-gowtham_hello is a lightweight Python package that prints a greeting message. It serves as a basic example for creating, packaging, and distributing a Python module. This repository includes the package source code, setup instructions, and a test script to verify installation.
+my_package is a simple Python package that provides motivational quotes. It includes a single function `get_quote()` that returns a random inspirational message.
 
 ## Project Structure
 ```
-gowtham_hello/
-│── gowtham_hello/
-│   ├── __init__.py
-│   ├── main.py
-│── testing/
-│   ├── main.py
+my_package/
+│── my_package/
+│   ├── __init__.py  # Initializes the package
+│   ├── main.py      # Contains the get_quote function
 │── setup.py
+│── requirements.txt  # Lists package dependencies
 │── README.md
 ```
 
-- `__init__.py`: Initializes the package and imports necessary modules.
-- `main.py`: Contains the `hello()` function that prints a greeting message.
+- `__init__.py`: Initializes the package.
+- `main.py`: Contains the `get_quote()` function.
 - `setup.py`: Defines package metadata and dependencies.
-- `testing/main.py`: Used to test the installed package.
+- `requirements.txt`: Contains necessary dependencies for installation.
 - `README.md`: Documentation for the package.
 
 ## Installation
-To install the package, use the following command:
-
-```
+To install the package, use:
+```bash
 pip install .
 ```
 
-If you want to create a distributable package, run:
-
+To install dependencies from `requirements.txt`, run:
+```bash
+pip install -r requirements.txt
 ```
+
+To create a distributable package, run:
+```bash
 python setup.py sdist bdist_wheel
 ```
+This will generate a package file in the `dist/` directory.
 
-This will generate a package file named:
+## Usage
+After installation, you can use the package as follows:
+```python
+from my_package.main import get_quote
+
+print(get_quote())
 ```
-dist/gowtham_hello-0.3-py3-none-any.whl
-```
+This will print a random motivational quote.
 
 ## Testing
-After installing the package, you can test it using the `testing` folder:
-
-```python
-from gowtham_hello.main import hello
-
-hello()
+To test the installation, you can run:
+```bash
+python -c "from my_package.main import get_quote; print(get_quote())"
 ```
-
-You should see the following output on the screen:
-```
-Hello this is Gowtham!
-```
+This should output a random quote from the list.
 
 ## Requirements
 This package requires:
 - Python 3.x
-- `numpy` version 2.0 or later
 
 ## Notes
-- Ensure that the `setup.py` file has correct spellings for `packages` and `install_requires`.
-- If any issues occur during installation, check dependencies and Python version.
+- Ensure `setup.py` contains the correct `packages` and `install_requires` fields.
+- Always install dependencies using `requirements.txt` to avoid version conflicts.
+- If issues occur, check dependencies and Python version.
 
 ## Author
 Gowtham Tadavarthy
