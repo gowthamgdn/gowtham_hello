@@ -9,6 +9,8 @@ my_package/
 │── my_package/
 │   ├── __init__.py  # Initializes the package
 │   ├── main.py      # Contains the get_quote function
+│── testing/
+│   ├── test_main.py  # Contains test cases for the package
 │── setup.py
 │── requirements.txt  # Lists package dependencies
 │── README.md
@@ -16,6 +18,7 @@ my_package/
 
 - `__init__.py`: Initializes the package.
 - `main.py`: Contains the `get_quote()` function.
+- `testing/test_main.py`: Contains test cases for the package.
 - `setup.py`: Defines package metadata and dependencies.
 - `requirements.txt`: Contains necessary dependencies for installation.
 - `README.md`: Documentation for the package.
@@ -52,6 +55,12 @@ To test the installation, you can run:
 python -c "from my_package.main import get_quote; print(get_quote())"
 ```
 This should output a random quote from the list.
+
+To run automated tests:
+```bash
+python -m unittest discover -s testing
+```
+This will execute all test cases in the `testing/` directory.
 
 ## Requirements
 This package requires:
