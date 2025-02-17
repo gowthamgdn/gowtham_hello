@@ -2,7 +2,7 @@ import random
 
 def get_quote():
     quotes = [
-        "Keep pushing forward! - Gowtham",
+        "Keep pushing forward!." - Gowtham,
         "Success is the sum of small efforts, repeated daily.",
         "Code, Learn, Improve, Repeat!",
         "Your only limit is your mind.",
