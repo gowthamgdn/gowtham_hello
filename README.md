@@ -5,8 +5,8 @@ my_package is a simple Python package that provides motivational quotes. It incl
 
 ## Project Structure
 ```
-my_package/
-│── my_package/
+gowtham_hello/
+│── gowtham_hello/
 │   ├── __init__.py  # Initializes the package
 │   ├── main.py      # Contains the get_quote function
 │── testing/
